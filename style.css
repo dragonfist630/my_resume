@@ -743,7 +743,6 @@ button {
   }
   .mq{
     width: 0;
-    height: 99vh!important;
     overflow-x: hidden;
     transition: 0.5s;
     position: fixed;
