@@ -1,7 +1,21 @@
 * {
   padding: 0px;
   margin: 0px;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {/* Track */
+  background: #191923;
+}
+::-webkit-scrollbar-thumb {/* Handle */
+  background: #35353b;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {/* Handle on hover */
+  background: #b9b9b9;
 }
 body {
   background-color: #191923 !important;
@@ -9,27 +23,21 @@ body {
   -webkit-user-select: none;
   -moz-user-select: none;
 }
-
 .wrapper {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: flex-start; */
   display: grid;
   grid-template-columns:  0.8fr 3.2fr ;
   grid-auto-rows: 96vh;
   padding: 1rem 2.3rem;
 }
+
+
+ /*--------------------- aside---------------- */
 aside {
   background-color: #20202a;
   display: grid;
   grid-template-rows: repeat (minmax(235px, auto), 6);
-  /* width: 0;
-  overflow-x: hidden;
-  transition: 0.5s;
-  position: fixed; */
   z-index: 1;
 }
-
 div.top {
   background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
   color: #8c8c8e;
@@ -37,7 +45,6 @@ div.top {
   padding: 1.875rem;
   padding-top: 2rem;
   opacity: 0.989;
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,17 +52,9 @@ div.top {
 }
 .closebtn{
   display: none;
-  /* position: absolute;
-  top: 0rem;
-  right: 0rem;
-  font-size: 2rem;
-  padding: .8rem; */
 }
 .opennav{
   display: none;
-  /* padding: 1rem;
-  background-color: #2d2d39;
-  color: white; */
 }
 .imgWrapper {
   position: relative;
@@ -93,16 +92,11 @@ div.top {
   line-height: 1.65;
   font-size: 1.2rem;
 }
-/* that yellow dot near my pic */
-.before-after {
+.before-after { /* that yellow dot near my pic */
   position: absolute;
   bottom: 0rem;
-  /* bottom: 3.438rem; */
-  /* top: 2rem; */
   justify-self:right;
   align-self: flex-end;
-  /* height: 1rem;
-  width: 1rem; */
   background: #ffc107;
   border-radius: 70%;
   transition: 0.4s ease-in-out;
@@ -111,11 +105,8 @@ div.top {
   width: 2.3em;
   height: 2.3em;
 }
-/* that plus of light bulp near my photo */
-#grey_bulp {
+#grey_bulp {/* that pluse of light bulp near my photo */
   position: absolute;
-  /* height: 1rem;
-  width: 1rem; */
   border-radius: 2rem;
   animation: 1s ease 0s infinite beat;
 }
@@ -132,11 +123,8 @@ div.top {
     transform: scale(1.72, 1.75) translate(-0.01rem, -0.01rem);
   }
 }
-/* same plus as above but small one */
-#grey_bulp_chota {
+#grey_bulp_chota { /* same plus as above but small one */
   position: absolute;
-  /* height: 2em;
-  width: 2em; */
   border-radius: 2rem;
   animation: 1s ease 0s infinite pulse;
 }
@@ -153,24 +141,6 @@ div.top {
     transform: scale(1.22, 1.22) translate(-0.01rem, -0.01rem);
   }
 }
-
-/* customizing the scrollbar of whole page*/
-::-webkit-scrollbar {
-  width: 10px;
-}
-/* Track */
-::-webkit-scrollbar-track {
-  background: #191923;
-}
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #35353b;
-  border-radius: 8px;
-}
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #b9b9b9;
-}
 .scrollbar {
   overflow: auto;
   margin-bottom: 0px;
@@ -179,9 +149,7 @@ div.top {
 .p_info {
   color: #8c8c8e;
   font-family: "Poppins", sans-serif;
-  /* min-height: 100%; */
 }
-
 .my_lang,
 .coding_sec,
 .knowledge,
@@ -192,7 +160,6 @@ div.top {
   border-bottom: 1.5px solid #35353b;
   box-sizing: border-box;
   margin: 0.5rem 1.5rem;
-  /* height: 100%; */
 }
 .locage{
   display: flex;
@@ -227,8 +194,7 @@ h5 {
   font-size: 1.34rem;
   font-weight: 900;
 }
-/* for circle progress bar */
-.all_progressbar_wrap {
+.all_progressbar_wrap {/* for circle progress bar */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -279,8 +245,7 @@ div[role="progressbar1"]::before {
   counter-reset: percentage var(--value);
   content: counter(percentage) "%";
 }
-/* for inline progress bar */
-.p_inline_bar {
+.p_inline_bar {/* for inline progress bar */
   height: 6px !important;
   border-radius: 2vh !important;
   background-color: black !important;
@@ -300,8 +265,7 @@ div[role="progressbar1"]::before {
   justify-self: center;
   color: white;
 }
-/* knowledge */
-.k_content_wrap {
+.k_content_wrap {/* knowledge */
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -319,7 +283,6 @@ div[role="progressbar1"]::before {
   font-weight: bold;
   font-size: 1.3rem;
 }
-/* cv */
 .cv {
   border: none;
 }
@@ -342,7 +305,6 @@ a {
   text-decoration: none !important;
   color: white!important;
 }
-/* social-contact */
 #contact {
   background: linear-gradient(159deg, rgba(88, 88, 100, 0.98) 0%, rgba(78, 78, 90, 0.98) 100%);
   min-height: 2.5rem;
@@ -357,15 +319,12 @@ a {
   margin-left: 1.5rem;
   justify-self: center;
 }
+
+
 /* ------------------------------ middle section -------------------------------------- */
 
 #middle {
-  /* width: 100%;
-  float: right; */
-  /* position: relative;
-  top: 0;
-  right: 0; */
-  background-image: linear-gradient(rgb(41, 42, 51, 0.945), rgb(29, 29, 39)), url("/bg.jpg");
+  background-image: linear-gradient(rgb(41, 42, 51, 0.945), rgb(29, 29, 39)), url("/img/bg.jpg");
   background-position: bottom;
   background-size: 100%;
   background-repeat: no-repeat!important;
@@ -383,7 +342,7 @@ a {
   flex-direction: column;
 }
 .middle-inner-top {
-  background-image: linear-gradient(rgb(41, 42, 51, 0.7), rgb(29, 29, 39, 0.7)), url("/bg.jpg");
+  background-image: linear-gradient(rgb(41, 42, 51, 0.7), rgb(29, 29, 39, 0.7)), url("/img/bg.jpg");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -417,8 +376,7 @@ h1 {
   width: 100%;
   height: 100%;
 }
-/* typing animation */
-.typewriter {
+.typewriter {/* typing animation */
   display: inline-flex;
 }
 .typewriter .static-txt {
@@ -459,14 +417,13 @@ h1 {
   border-right: 0.15em solid orange;
   animation: slide 6s steps(4) infinite, typing 1.5s steps(40, end) infinite, blink-caret 0.5s step-end infinite;
 }
-/* going up when its animation is done */
-@keyframes slide {
+
+@keyframes slide {/* going up when its animation is done */
   100% {
     top: -22.5rem;
   }
 }
-/* creates a typing effect */
-@keyframes typing {
+@keyframes typing {/* creates a typing effect */
   from {
     width: 0;
   }
@@ -474,8 +431,7 @@ h1 {
     width: 100%;
   }
 }
-/* The typewriter cursor effect */
-@keyframes blink-caret {
+@keyframes blink-caret {/* The typewriter cursor effect */
   from,
   to {
     border-color: transparent;
@@ -487,8 +443,7 @@ h1 {
 .dynamic-txts li span {
   position: relative;
 }
-/* number displayed under my_big pic */
-.number {
+.number {/* number displayed under my_big pic */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -518,8 +473,7 @@ h1 {
   font: 800 1.575em "Poppins";
   content: counter(count);
 }
-/* animation for those numbers   */
-.workex::before {
+.workex::before {/* animation for those numbers   */
   animation: counter 1s linear alternate;
   counter-reset: count 3;
 }
@@ -639,7 +593,6 @@ h1 {
   flex-wrap: wrap;
   line-height: 0.2rem
 }
-
 .title-wrap p{
   line-height: normal;
 }
@@ -654,8 +607,7 @@ button {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-/* fotter of main*/
- .footer{
+ .footer{/* fotter of main*/
   width: 93%;
   display: flex;
   justify-content: center;
@@ -665,8 +617,7 @@ button {
   color: #fafafc;
   font-size: 1rem;
  }
-/* right one aside */
-.login-right-side{
+.login-right-side{/* right one aside */
   background-color: #252531;
   display: flex;
   justify-content: center;
@@ -676,19 +627,19 @@ button {
 }
 
 
+
+
  /*------------ media queries -------------------*/
-/* really really small device () */
-@media(max-width: 264px){
-  /* .before-after, #grey_bulp, #grey_bulp_chota{
-    width: 1.5em;
-    height: 1.5em;
-  } */
+
+@media(max-width: 264px){/* really really small device ( 264 and below) */
+  html{
+    font-size: 40%!important;
+  }
   .typewriter, .static-txt-bracket{
     display: none;
   }
   #middle{
     width: 100%;
-    /* height: 100vh!important; */
   }
   .wrapper {
     display: flex;
@@ -704,8 +655,7 @@ button {
   }
   div.top {  
     position: relative;
-  }
-  
+  }  
   .closebtn{
     display: flex;
     position: absolute;
@@ -720,18 +670,15 @@ button {
     background-color: #2d2d39;
     color: white;
   }
-}
- /* small devices like galaxy fold ( 304px and below)*/
-@media (max-width: 304px){ 
+} 
+@media (max-width: 304px){ /* small devices like galaxy fold ( 304px and below)*/
   html{
     font-size: 50%;
-  }
-  
+  }  
   .static-txt-bracket{
     top: 1.4rem !important;
     left: -.7rem;
-    padding: 0%!important;
-    
+    padding: 0%!important;    
   }
    .typewriter .dynamic-txts{
     top: 2.5rem!important;
@@ -753,7 +700,6 @@ button {
     padding: 1rem 2.3rem;
   }
   aside {
-    /* height: 98vh!important; */
     width: 0;
     overflow-x: hidden;
     transition: 0.5s;
@@ -762,7 +708,6 @@ button {
   div.top {  
     position: relative;
   }
-  
   .closebtn{
     position: absolute;
     top: 0rem;
@@ -776,9 +721,7 @@ button {
     color: white;
   }
 }
-
-/*small phones ( 468px and down)*/
-@media (max-width: 468px) {
+@media (max-width: 468px) {/*small phones ( 468px and below)*/
   html{
     font-size: 70%;
   }
@@ -874,9 +817,7 @@ button {
     width: auto;
   }
 } 
-
-/* Normal phones or tabs devices ( normal size phones/tabs) */
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* Normal phones or tabs devices ( 768 and below) */
   html{
     font-size: 70%;
   }
@@ -892,11 +833,11 @@ button {
     font-size: xx-small;
   }
   .mq{
-    width: 0;
-    /* height: 99vh; */
-  overflow-x: hidden;
-  transition: 0.5s;
-  position: fixed;
+    width: 0;  
+    height: 100%;  
+    overflow-x: hidden;
+    transition: 0.5s;
+    position: fixed;
   }  
   div.top {  
     position: relative;
@@ -931,9 +872,7 @@ button {
     background-position: 0rem -5rem;
   }
 }
-
-/*Ipad  from 769 to 1023*/
-@media (min-width: 769px) and (max-width: 1023px){
+@media (min-width: 769px) and (max-width: 1023px){ /*Ipad  from 769 to 1023*/
   .before-after, #grey_bulp, #grey_bulp_chota{
     width: 2.5em;
     height: 2.5em;
@@ -981,9 +920,7 @@ button {
     width: 100%;
   }
 } 
-
-/*Desktop and Laptops (from 1024 to up)*/
-@media (min-width: 1024px) {  
+@media (min-width: 1024px) {  /*Desktop and Laptops (from 1024 to above)*/
   html{
     font-size: 90%;
   }
