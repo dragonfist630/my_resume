@@ -324,7 +324,7 @@ a {
 /* ------------------------------ middle section -------------------------------------- */
 
 #middle {
-  background-image: linear-gradient(rgb(41, 42, 51, 0.945), rgb(29, 29, 39)), url("/img/bg.jpg");
+  background-image: linear-gradient(rgb(41, 42, 51, 0.945), rgb(29, 29, 39)), url("img/bg.jpg");
   background-position: bottom;
   background-size: 100%;
   background-repeat: no-repeat!important;
@@ -342,7 +342,7 @@ a {
   flex-direction: column;
 }
 .middle-inner-top {
-  background-image: linear-gradient(rgb(41, 42, 51, 0.7), rgb(29, 29, 39, 0.7)), url("/img/bg.jpg");
+  background-image: linear-gradient(rgb(41, 42, 51, 0.7), rgb(29, 29, 39, 0.7)), url("img/bg.jpg");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
