@@ -5,7 +5,7 @@
   font-family: "Poppins", sans-serif;
 }
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 1px;
 }
 ::-webkit-scrollbar-track {/* Track */
   background: #191923;
@@ -646,12 +646,12 @@ button {
   #middle{
     width: 100%;
   }
-  .wrapper {
+/*   .wrapper {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     padding: 1rem 2.3rem;
-  }
+  } */
   .mq {
     width: 0;
     overflow-x: hidden;
@@ -698,12 +698,12 @@ button {
     height: 100vh!important;
     background-position: 0rem -3rem;
   }
-  .wrapper {
+/*   .wrapper {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     padding: 1rem 2.3rem;
-  }
+  } */
   aside {
     width: 0;
     overflow-x: hidden;
@@ -731,10 +731,10 @@ button {
     font-size: 70%;
   }
    .wrapper{
-    display: flex;
+/*     display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  padding: 1rem 2.3rem;
+  justify-content: flex-start; */
+/*   padding: 1rem 2.3rem; */
     font-size: xx-small;
   }
   .mq{
@@ -836,7 +836,7 @@ button {
     display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  padding: 1rem 2.3rem;
+  padding: 0rem!important;
     font-size: xx-small;
   }
   .mq{
