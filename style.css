@@ -146,6 +146,7 @@ div.top {
   overflow: auto;
   margin-bottom: 0px;
   padding-bottom: 0px;
+  scrollbar-width: thin;
 }
 .p_info {
   display: flex;
@@ -322,7 +323,7 @@ a {
 /* ------------------------------ middle section -------------------------------------- */
 
 #middle {
-  background-image: linear-gradient(rgb(41, 42, 51, 0.945), rgb(29, 29, 39)), url("/img/bg.jpg");
+  background-image: linear-gradient(rgb(41, 42, 51, 0.945), rgb(29, 29, 39)), url("img/bg.jpg");
   background-position: bottom;
   background-size: 100%;
   background-repeat: no-repeat!important;
@@ -331,6 +332,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   overflow-y: scroll;
+  scrollbar-width: thin;
 }
 .middle-top {
   width: 93%;
@@ -340,7 +342,7 @@ a {
   flex-direction: column;
 }
 .middle-inner-top {
-  background-image: linear-gradient(rgb(41, 42, 51, 0.7), rgb(29, 29, 39, 0.7)), url("/img/bg.jpg");
+  background-image: linear-gradient(rgb(41, 42, 51, 0.7), rgb(29, 29, 39, 0.7)), url("img/bg.jpg");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -369,6 +371,10 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+iframe{
+  width: 100%;
+  height: 100%;
 }
 #my_big_pic {
   width: 100%;
@@ -793,7 +799,7 @@ button {
     height: 90%;
   }
   .inner-top-left {
-    width: 100%;
+    /* width: 100%; */
     padding: 1rem;
     margin-left: 0rem;
     margin-top: 0rem;
