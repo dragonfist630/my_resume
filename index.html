@@ -6,28 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nayan-Gadhari</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
-    <link rel="icon" href="img/dragon.png" type="image/icon type">  
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="icon" href="img/dragon.png" type="image/icon type" />
   </head>
   <body>
-    <main class="wrapper">        
-      <span style="font-size:1.9rem;cursor:pointer" 
-        class="opennav" id="open" onclick="openNav()">&#9776; 
-      </span>       <!-- side symbol to open side navbar -->
-      <aside class="mq" id="mySidenav"> <!-- side navebar for my information -->
+    <main class="wrapper">
+      <span style="font-size: 1.9rem; cursor: pointer" class="opennav" id="open" onclick="openNav()">&#9776; </span>
+      <!-- side symbol to open side navbar -->
+      <aside class="mq" id="mySidenav">
+        <!-- side navebar for my information -->
         <!-- top row which consist of my pic with my name -->
         <div class="top">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <div class="imgWrapper">
             <img id="my_pic" src="img/n_pic-removebg-preview.png" alt="my_pic" />
-                <div class="before-after"><div id="grey_bulp"></div><div id="grey_bulp_chota"></div></div>           
-          </div>        
-          <span class="my_nm">Nayan Gadhari</span> <br>
+            <div class="before-after">
+              <div id="grey_bulp"></div>
+              <div id="grey_bulp_chota"></div>
+            </div>
+          </div>
+          <span class="my_nm">Nayan Gadhari</span> <br />
           <div class="my_designation">
             Associate Software Engineer<br />
             @Torry Harris Business Solution
@@ -36,114 +44,117 @@
         <div class="scrollbar flex-column">
           <div class="p_info">
             <!--my residence -->
-            <ul class="locage ">              
+            <ul class="locage">
               <li>
                 <h6>Residence:</h6>
                 <p>Mumbai, India</p>
-              </li>    <br>  
+              </li>
+              <br />
               <li>
                 <h6>Age:</h6>
                 <p>22</p>
               </li>
             </ul>
           </div>
-            <!-- what skill i have? -->   
+          <!-- what skill i have? -->
           <div class="my_lang flex-column">
-           <h5>Language</h5> <br>
-           <div class="all_progressbar_wrap">
-              <div class="each_progressbar flex-column">
-                <div class="mb-2" role="progressbar1" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="--value:77"></div>
-                <span >English</span>
-              </div>
-              <div class="each_progressbar flex-column">
-                <div class="mb-2" role="progressbar1" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="--value:90"></div>
-                <span style="margin-left: 10px;">Hindi</span>
-              </div>
-              <div class="each_progressbar flex-column">
-                <div class="mb-2" role="progressbar1" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="--value:95"></div>
-                <span>Marathi</span>
-              </div>
-           </div>    <br>
+            <h5>Language</h5>
+            <br />
+            <div data-circle-progressbar-container class="all_progressbar_wrap">
+              <template data-circle-progressbar>
+                <div class="each_progressbar flex-column">
+                  <div data-number-in-circle class="mb-2" role="progressbar1" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  <span data-language></span>
+                </div>
+              </template>
+            </div>
+            <br />
           </div>
-         <!-- coding languages -->
-         <div class="coding_sec">
-           <h5>Coding</h5> <br>
-           <div class="inline_progressbar_wrap flex-column">
-              <div class="coding_words_wrap">
-               <h6>Html5</h6> <span>70%</span>
+          <!-- coding languages -->
+          <div data-inlineprogress-bar-continer class="coding_sec">
+            <h5>Coding</h5>
+            <br />
+            <template data-inline-progressbar-card>
+              <div class="inline_progressbar_wrap flex-column">
+                <div class="coding_words_wrap">
+                  <h6 data-inline-progressbar-name></h6>
+                  <span data-inline-progressbar-percentage></span>
+                </div>
+                <div class="progress p_inline_bar">
+                  <div data-inline-progressbar-fill class="progress-bar bg-warning" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
               </div>
-              <div class="progress p_inline_bar">
-                <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div> 
-            </div><br>
-            <div class="inline_progressbar_wrap flex-column">
-              <div class="coding_words_wrap">
-               <h6>CSS3</h6> <span>75%</span>
-              </div>
-              <div class="progress p_inline_bar">
-               <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div> <br>
-            </div> <br>
-           <div class="inline_progressbar_wrap flex-column">
-              <div class="coding_words_wrap">
-               <h6>JS</h6> <span>60%</span>
-              </div>
-              <div class="progress p_inline_bar">
-               <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div> <br>
-            </div> <br>
-            <div class="inline_progressbar_wrap flex-column">
-              <div class="coding_words_wrap" >
-                <h6>reactJS</h6> <span>30%</span>
-              </div>
-              <div class="progress p_inline_bar">
-               <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div> <br>
-            </div> <br>
-            <div class="inline_progressbar_wrap flex-column">
-              <div class="coding_words_wrap">
-                <h6>SQL</h6> <span>30%</span>
-              </div>
-              <div class="progress p_inline_bar">
-                <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div> <br>
-            </div> <br>
-         </div>
-         <!-- about my knowledege in Front-end -->
-         <div class="knowledge">
+            </template>
+          </div>
+          <!-- about my knowledege in Front-end -->
+          <div class="knowledge">
             <h5>Knowledge</h5>
-            <div class="k_content_wrap ">
+            <div class="k_content_wrap">
               <span class="material-icons tick">done</span>
               <span id="k_words">Bootstrap</span>
             </div>
-            <div class="k_content_wrap ">
+            <div class="k_content_wrap">
+              <span class="material-icons tick">done</span>
+              <span id="k_words">Tailwindcss</span>
+            </div>
+            <div class="k_content_wrap">
               <span class="material-icons tick">done</span>
               <span id="k_words">Github</span>
             </div>
-            <div class="k_content_wrap ">
+            <div class="k_content_wrap">
               <span class="material-icons tick">done</span>
               <span id="k_words">MVC</span>
-            </div> <br>
-         </div> 
-         <!-- donwload cv -->
-         <div class="cv flex-row">
-           <a target="_blank" href="file/R_web_dev.pdf"><span>Download CV</span>
-            <span class="material-icons" id="download">save_alt</span></a>            
-         </div>
+            </div>
+            <br />
+          </div>
+          <!-- donwload cv -->
+          <div class="cv flex-row">
+            <a target="_blank" href="file/R_web_dev.pdf"><span>Download CV</span> <span class="material-icons" id="download">save_alt</span></a>
+          </div>
         </div>
         <div id="contact">
-            <!-- for whatsapp -->
+          <!-- for whatsapp -->
           <a target="_blank" href="https://wa.me/917718005783?text=Hi%20I%20like%20your%20resume%20.%20We%20need%20developers%20like%20you%20:%20)">
-            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="2rem" viewBox="0 0 24 24" width="2rem" fill="#FFFFFF"><g><rect fill="none" height="24" width="24" y="0"/></g><g><g><g><path d="M19.05,4.91C17.18,3.03,14.69,2,12.04,2c-5.46,0-9.91,4.45-9.91,9.91c0,1.75,0.46,3.45,1.32,4.95L2.05,22l5.25-1.38 c1.45,0.79,3.08,1.21,4.74,1.21h0c0,0,0,0,0,0c5.46,0,9.91-4.45,9.91-9.91C21.95,9.27,20.92,6.78,19.05,4.91z M12.04,20.15 L12.04,20.15c-1.48,0-2.93-0.4-4.2-1.15l-0.3-0.18l-3.12,0.82l0.83-3.04l-0.2-0.31c-0.82-1.31-1.26-2.83-1.26-4.38 c0-4.54,3.7-8.24,8.24-8.24c2.2,0,4.27,0.86,5.82,2.42c1.56,1.56,2.41,3.63,2.41,5.83C20.28,16.46,16.58,20.15,12.04,20.15z M16.56,13.99c-0.25-0.12-1.47-0.72-1.69-0.81c-0.23-0.08-0.39-0.12-0.56,0.12c-0.17,0.25-0.64,0.81-0.78,0.97 c-0.14,0.17-0.29,0.19-0.54,0.06c-0.25-0.12-1.05-0.39-1.99-1.23c-0.74-0.66-1.23-1.47-1.38-1.72c-0.14-0.25-0.02-0.38,0.11-0.51 c0.11-0.11,0.25-0.29,0.37-0.43c0.12-0.14,0.17-0.25,0.25-0.41c0.08-0.17,0.04-0.31-0.02-0.43c-0.06-0.12-0.56-1.34-0.76-1.84 c-0.2-0.48-0.41-0.42-0.56-0.43C8.86,7.33,8.7,7.33,8.53,7.33c-0.17,0-0.43,0.06-0.66,0.31C7.65,7.89,7.01,8.49,7.01,9.71 c0,1.22,0.89,2.4,1.01,2.56c0.12,0.17,1.75,2.67,4.23,3.74c0.59,0.26,1.05,0.41,1.41,0.52c0.59,0.19,1.13,0.16,1.56,0.1 c0.48-0.07,1.47-0.6,1.67-1.18c0.21-0.58,0.21-1.07,0.14-1.18S16.81,14.11,16.56,13.99z"/></g></g></g></svg>
-          </a> 
-             <!-- for twitter -->
+            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="2rem" viewBox="0 0 24 24" width="2rem" fill="#FFFFFF">
+              <g><rect fill="none" height="24" width="24" y="0" /></g>
+              <g>
+                <g>
+                  <g>
+                    <path
+                      d="M19.05,4.91C17.18,3.03,14.69,2,12.04,2c-5.46,0-9.91,4.45-9.91,9.91c0,1.75,0.46,3.45,1.32,4.95L2.05,22l5.25-1.38 c1.45,0.79,3.08,1.21,4.74,1.21h0c0,0,0,0,0,0c5.46,0,9.91-4.45,9.91-9.91C21.95,9.27,20.92,6.78,19.05,4.91z M12.04,20.15 L12.04,20.15c-1.48,0-2.93-0.4-4.2-1.15l-0.3-0.18l-3.12,0.82l0.83-3.04l-0.2-0.31c-0.82-1.31-1.26-2.83-1.26-4.38 c0-4.54,3.7-8.24,8.24-8.24c2.2,0,4.27,0.86,5.82,2.42c1.56,1.56,2.41,3.63,2.41,5.83C20.28,16.46,16.58,20.15,12.04,20.15z M16.56,13.99c-0.25-0.12-1.47-0.72-1.69-0.81c-0.23-0.08-0.39-0.12-0.56,0.12c-0.17,0.25-0.64,0.81-0.78,0.97 c-0.14,0.17-0.29,0.19-0.54,0.06c-0.25-0.12-1.05-0.39-1.99-1.23c-0.74-0.66-1.23-1.47-1.38-1.72c-0.14-0.25-0.02-0.38,0.11-0.51 c0.11-0.11,0.25-0.29,0.37-0.43c0.12-0.14,0.17-0.25,0.25-0.41c0.08-0.17,0.04-0.31-0.02-0.43c-0.06-0.12-0.56-1.34-0.76-1.84 c-0.2-0.48-0.41-0.42-0.56-0.43C8.86,7.33,8.7,7.33,8.53,7.33c-0.17,0-0.43,0.06-0.66,0.31C7.65,7.89,7.01,8.49,7.01,9.71 c0,1.22,0.89,2.4,1.01,2.56c0.12,0.17,1.75,2.67,4.23,3.74c0.59,0.26,1.05,0.41,1.41,0.52c0.59,0.19,1.13,0.16,1.56,0.1 c0.48-0.07,1.47-0.6,1.67-1.18c0.21-0.58,0.21-1.07,0.14-1.18S16.81,14.11,16.56,13.99z"
+                    />
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+          <!-- for twitter -->
           <a href="#">
-           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	           width="2rem" height="2rem" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-             <g id="twitter_1_" enable-background="new    ">
-               <g id="twitter">
-		             <g>
-		    	         <path fill="white" d="M56.568,14.179v-0.032c0.558-0.218,0.998-0.68,1.441-1.022c2-1.541,3.301-3.57,4.26-6.164
+            <svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              width="2rem"
+              height="2rem"
+              viewBox="0 0 64 64"
+              enable-background="new 0 0 64 64"
+              xml:space="preserve"
+            >
+              <g id="twitter_1_" enable-background="new    ">
+                <g id="twitter">
+                  <g>
+                    <path
+                      fill="white"
+                      d="M56.568,14.179v-0.032c0.558-0.218,0.998-0.68,1.441-1.022c2-1.541,3.301-3.57,4.26-6.164
 				           c-0.543,0.298-1.088,0.596-1.633,0.894c-1.681,0.853-4.533,2.079-6.728,2.267c-2.586-2.356-5.292-4.209-10.378-4.12
 				           c-0.534,0.064-1.068,0.128-1.602,0.192c-1.037,0.227-2.025,0.508-2.916,0.894c-3.724,1.616-6.263,4.631-7.431,8.814
 				           c-0.465,1.664-0.654,4.445-0.064,6.164c-2.101-0.003-4.135-0.334-5.894-0.767C18.69,19.594,14.372,17.29,9.578,13.54
@@ -155,160 +166,135 @@
 				           c-2.272,1.329-4.91,2.191-7.88,2.843c-1.191,0.26-2.457,0.207-3.748,0.414c-1.427,0.23-2.92-0.121-4.196-0.16
 				           c0.384,0.234,0.769,0.47,1.153,0.703c1.171,0.713,2.394,1.338,3.716,1.916c2.379,1.041,4.914,1.826,7.72,2.523
 				           c5.658,1.404,13.64,0.773,18.579-0.766c13.754-4.287,22.442-14.293,25.722-29.03c0.564-2.535,0.646-5.414,0.609-8.431
-				           c0.684-0.543,1.367-1.086,2.05-1.629c1.693-1.356,3.28-3.246,4.452-5.11v-0.032C61.768,12.864,59.418,14.149,56.568,14.179z"/>
-		             </g>
-	             </g>
-             </g>
-           </svg>
+				           c0.684-0.543,1.367-1.086,2.05-1.629c1.693-1.356,3.28-3.246,4.452-5.11v-0.032C61.768,12.864,59.418,14.149,56.568,14.179z"
+                    />
+                  </g>
+                </g>
+              </g>
+            </svg>
           </a>
-           <!-- for github -->
-          <a target="_blank" href="https://github.com/dragonfist630">  
+          <!-- for github -->
+          <a target="_blank" href="https://github.com/dragonfist630">
             <svg id="i-github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="2rem" height="2rem">
-              <path stroke-width="0" fill="white" d="M32 0 C14 0 0 14 0 32 0 53 19 62 
+              <path
+                stroke-width="0"
+                fill="white"
+                d="M32 0 C14 0 0 14 0 32 0 53 19 62 
               22 62 24 62 24 61 24 60 L24 55 C17 57 14 53 13 50 13 50 13 49 11 47 10 
               46 6 44 10 44 13 44 15 48 15 48 18 52 22 51 24 50 24 48 26 46 26 46 18 
               45 12 42 12 31 12 27 13 24 15 22 15 22 13 18 15 13 15 13 20 13 24 17 27 
               15 37 15 40 17 44 13 49 13 49 13 51 20 49 22 49 22 51 24 52 27 52 31 52
               42 45 45 38 46 39 47 40 49 40 52 L40 60 C40 61 40 62 42 62 45 62 64 53 
-              64 32 64 14 50 0 32 0 Z" />
-            </svg> 
+              64 32 64 14 50 0 32 0 Z"
+              />
+            </svg>
           </a>
-           <!-- for linkedin -->
+          <!-- for linkedin -->
           <a target="_blank" href="https://www.linkedin.com/in/nayangadhari/">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	            width="2rem" height="2rem" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+            <svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              width="2rem"
+              height="2rem"
+              viewBox="0 0 64 64"
+              enable-background="new 0 0 64 64"
+              xml:space="preserve"
+            >
               <g id="linkedin_1_" enable-background="new">
-	              <g id="linkedin">
-		             <g>
-			             <path fill="white" d="M0.798,62.986h14.315V22.368H0.798V62.986z M48.434,21.087c-5.925,0-9.192,1.972-12.953,6.749v-5.469H21.189v40.619
+                <g id="linkedin">
+                  <g>
+                    <path
+                      fill="white"
+                      d="M0.798,62.986h14.315V22.368H0.798V62.986z M48.434,21.087c-5.925,0-9.192,1.972-12.953,6.749v-5.469H21.189v40.619
 				            H35.48V40.914c0-4.658,2.24-9.214,7.596-9.214s6.673,4.555,6.673,9.103v22.184H64v-23.09C64,23.854,54.361,21.087,48.434,21.087z
 				            M7.982,2.013C3.572,2.013,0,5.222,0,9.183c0,3.958,3.572,7.162,7.982,7.162c4.406,0,7.978-3.205,7.978-7.162
-				           C15.96,5.222,12.388,2.013,7.982,2.013z"/>
-		             </g>
-	              </g> 
+				           C15.96,5.222,12.388,2.013,7.982,2.013z"
+                    />
+                  </g>
+                </g>
               </g>
             </svg>
           </a>
         </div>
-      </aside>       
-      <section id="middle" > <!------------------- middle section ---------------------->
+      </aside>
+      <section id="middle">
+        <!------------------- middle section ---------------------->
         <div class="middle-top">
           <div class="middle-inner-top">
             <div class="inner-top-left">
               <h1>Discover my Amazing Art Space!</h1>
               <!-- <h1>Art Space!</h1> -->
               <div class="static-txt-bracket"><<i>code</i>></div>
-              <div class="typewriter">               
+              <div class="typewriter">
                 <h2 class="static-txt">I build</h2>
                 <ul class="dynamic-txts">
-                   <li><span>websites.</span></li>
-                   <li><span>application.</span></li>
-                   <!-- <li><span>web-interface.</span></li> -->
-                  </ul> 
-                </div> 
-                  <div class="static-txt-bracket" style="top: -4.5rem;"><<i>/code</i>></div>
-             </div>
+                  <li><span>websites.</span></li>
+                  <li><span>application.</span></li>
+                </ul>
+              </div>
+              <div class="static-txt-bracket" style="top: -4.5rem"><<i>/code</i>></div>
+            </div>
             <div class="inner-top-right">
               <!-- <img src="/img/my_big_pic.png" alt="my_big_pic" id="my_big_pic"> -->
               <!-- <iframe target="_blank" src='https://my.spline.design/grogucopy-0ec1a756dcee1ea44569cc62f3cdbada/' frameborder='0' width='100%' height='100%'></iframe> -->
-              <iframe src='https://my.spline.design/devicecloudcopy-c5627e053f8904fe7e63f4b7e34a2f2b/' frameborder='0' width='100%' height='100%'></iframe>
+              <iframe
+                src="https://my.spline.design/devicecloudcopy-c5627e053f8904fe7e63f4b7e34a2f2b/"
+                frameborder="0"
+                width="100%"
+                height="100%"
+              ></iframe>
               <!-- <iframe src='https://my.spline.design/devicecloudcopy-c5627e053f8904fe7e63f4b7e34a2f2b/' frameborder='0' width='100%' height='100%'></iframe> -->
-            </div>            
+            </div>
           </div>
           <!-- animation under the big bg -->
           <div class="number">
-            <div class="workex"> +<span>Months Experience</span></div>
-            <div class="project"> +<span>Complete Projects</span></div>
-            <div class="cgpa"> %<span> in B.E. Comps</span></div>
+            <div class="workex">+<span>Months Experience</span></div>
+            <div class="project">+<span>Complete Projects</span></div>
+            <div class="cgpa">%<span> in B.E. Comps</span></div>
           </div>
         </div>
         <div class="my_w_history">
           <h3>Work Experience</h3>
-          <div class="w_history_wrap">
-          <div class="thbs">
-            <div class="title-wrap">
-              <h4 class="title">Associate Software Engineer trainee</h4>
-              <p> <i> Since Sept 2021, </i>
-              @TORRY HARRIS BUSINESS SOLUTION</p>
-            </div>
-            <p>Building beginners level websites with the help of new technologies by attending training provided by the company.
-            </p>
-          </div>
-          <div class="thbs">
-            <div class="title-wrap">
-              <h4 class="title">Business Associate</h4>
-              <p><i>From April 21 - Aug 21,</i> @STELLAR ORGANISATION</p>
-            </div>
-            <p>Stellar organization is a marketing & sales acceleration firm for charities like UNICEF, Save the Children, CRY, HelpAge. 
-	       My Responsibility as Business Associate is to generate sales through Face to Face and Telemarketing for our Clients.
-            </p>
+          <div data-Wex-container class="w_history_wrap">
+            <template data-Wex-card>
+              <div class="thbs">
+                <div class="title-wrap">
+                  <h4 data-Wex-title class="title"></h4>
+                  <p data-Wex-c-name></p>
+                </div>
+                <p data-Wex-desc></p>
+              </div>
+            </template>
           </div>
         </div>
-        </div>
-
+        <!-- Personal Projects -->
         <div class="my_w_history">
           <h3>Personal Projects</h3>
-          <div class="w_history_wrap">
-          <div class="thbs">
-            <div class="title-wrap">
-              <h4 class="title">Train Tiket Booking website</h4>
-              <p> <i>From Dec 21 - Dec 21 </i></p>
-            </div>
-            <p>Created fullstack website for booking train ticket using express framework and mongose library.   
-            </p> 
-            <div class="logo-btn-wrap">
-              <div class="logo-wrap">
-               <svg fill="none" height="32" width="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 141.53199999999998"><path d="M10.383 126.894L0 0l124 .255-10.979 126.639-50.553 14.638z" fill="#e34f26"/><path d="M62.468 129.277V12.085l51.064.17-9.106 104.851z" fill="#ef652a"/><path d="M99.49 41.362l1.446-15.49H22.383l4.34 47.49h54.213L78.81 93.617l-17.362 4.68-17.617-5.106-.936-12.085H27.319l2.128 24.681 32 8.936 32.255-8.936 4.34-48.17H41.107L39.49 41.362z" fill="#fff"/></svg>
-               <svg fill="none" height="32" width="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 141.53"><path d="M10.383 126.892L0 0l124 .255-10.979 126.637-50.553 14.638z" fill="#1b73ba"/><path d="M62.468 129.275V12.085l51.064.17-9.106 104.85z" fill="#1c88c7"/><path d="M100.851 27.064H22.298l2.128 15.318h37.276l-36.68 15.745 2.127 14.808h54.043l-1.958 20.68-18.298 3.575-16.595-4.255-1.277-11.745H27.83l2.042 24.426 32.681 9.106 31.32-9.957 4-47.745H64.765l36.085-14.978z" fill="#fff"/></svg>
-               <svg width="32" height="32" viewBox="0 0 256 282" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet"><g fill="#8CC84B"><path d="M116.504 3.58c6.962-3.985 16.03-4.003 22.986 0 34.995 19.774 70.001 39.517 104.99 59.303 6.581 3.707 10.983 11.031 10.916 18.614v118.968c.049 7.897-4.788 15.396-11.731 19.019-34.88 19.665-69.742 39.354-104.616 59.019-7.106 4.063-16.356 3.75-23.24-.646-10.457-6.062-20.932-12.094-31.39-18.15-2.137-1.274-4.546-2.288-6.055-4.36 1.334-1.798 3.719-2.022 5.657-2.807 4.365-1.388 8.374-3.616 12.384-5.778 1.014-.694 2.252-.428 3.224.193 8.942 5.127 17.805 10.403 26.777 15.481 1.914 1.105 3.852-.362 5.488-1.274 34.228-19.345 68.498-38.617 102.72-57.968 1.268-.61 1.969-1.956 1.866-3.345.024-39.245.006-78.497.012-117.742.145-1.576-.767-3.025-2.192-3.67-34.759-19.575-69.5-39.18-104.253-58.76a3.621 3.621 0 0 0-4.094-.006C91.2 39.257 56.465 58.88 21.712 78.454c-1.42.646-2.373 2.071-2.204 3.653.006 39.245 0 78.497 0 117.748a3.329 3.329 0 0 0 1.89 3.303c9.274 5.259 18.56 10.481 27.84 15.722 5.228 2.814 11.647 4.486 17.407 2.33 5.083-1.823 8.646-7.01 8.549-12.407.048-39.016-.024-78.038.036-117.048-.127-1.732 1.516-3.163 3.2-3 4.456-.03 8.918-.06 13.374.012 1.86-.042 3.14 1.823 2.91 3.568-.018 39.263.048 78.527-.03 117.79.012 10.464-4.287 21.85-13.966 26.97-11.924 6.177-26.662 4.867-38.442-1.056-10.198-5.09-19.93-11.097-29.947-16.55C5.368 215.886.555 208.357.604 200.466V81.497c-.073-7.74 4.504-15.197 11.29-18.85C46.768 42.966 81.636 23.27 116.504 3.58z"/><path d="M146.928 85.99c15.21-.979 31.493-.58 45.18 6.913 10.597 5.742 16.472 17.793 16.659 29.566-.296 1.588-1.956 2.464-3.472 2.355-4.413-.006-8.827.06-13.24-.03-1.872.072-2.96-1.654-3.195-3.309-1.268-5.633-4.34-11.212-9.642-13.929-8.139-4.075-17.576-3.87-26.451-3.785-6.479.344-13.446.905-18.935 4.715-4.214 2.886-5.494 8.712-3.99 13.404 1.418 3.369 5.307 4.456 8.489 5.458 18.33 4.794 37.754 4.317 55.734 10.626 7.444 2.572 14.726 7.572 17.274 15.366 3.333 10.446 1.872 22.932-5.56 31.318-6.027 6.901-14.805 10.657-23.56 12.697-11.647 2.597-23.734 2.663-35.562 1.51-11.122-1.268-22.696-4.19-31.282-11.768-7.342-6.375-10.928-16.308-10.572-25.895.085-1.619 1.697-2.748 3.248-2.615 4.444-.036 8.888-.048 13.332.006 1.775-.127 3.091 1.407 3.182 3.08.82 5.367 2.837 11 7.517 14.182 9.032 5.827 20.365 5.428 30.707 5.591 8.568-.38 18.186-.495 25.178-6.158 3.689-3.23 4.782-8.634 3.785-13.283-1.08-3.925-5.186-5.754-8.712-6.95-18.095-5.724-37.736-3.647-55.656-10.12-7.275-2.571-14.31-7.432-17.105-14.906-3.9-10.578-2.113-23.662 6.098-31.765 8.006-8.06 19.563-11.164 30.551-12.275z"/></g></svg>
-               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M15.9.087l.854 1.604c.192.296.4.558.645.802.715.715 1.394 1.464 2.004 2.266 1.447 1.9 2.423 4.01 3.12 6.292.418 1.394.645 2.824.662 4.27.07 4.323-1.412 8.035-4.4 11.12-.488.488-1.01.94-1.57 1.342-.296 0-.436-.227-.558-.436-.227-.383-.366-.82-.436-1.255-.105-.523-.174-1.046-.14-1.586v-.244C16.057 24.21 15.796.21 15.9.087z" fill="#599636"/><path d="M15.9.034c-.035-.07-.07-.017-.105.017.017.35-.105.662-.296.96-.21.296-.488.523-.767.767-1.55 1.342-2.77 2.963-3.747 4.776-1.3 2.44-1.97 5.055-2.16 7.808-.087.993.314 4.497.627 5.508.854 2.684 2.388 4.933 4.375 6.885.488.47 1.01.906 1.55 1.325.157 0 .174-.14.21-.244a4.78 4.78 0 0 0 .157-.68l.35-2.614L15.9.034z" fill="#6cac48"/><path d="M16.754 28.845c.035-.4.227-.732.436-1.063-.21-.087-.366-.26-.488-.453-.105-.174-.192-.383-.26-.575-.244-.732-.296-1.5-.366-2.248v-.453c-.087.07-.105.662-.105.75a17.37 17.37 0 0 1-.314 2.353c-.052.314-.087.627-.28.906 0 .035 0 .07.017.122.314.924.4 1.865.453 2.824v.35c0 .418-.017.33.33.47.14.052.296.07.436.174.105 0 .122-.087.122-.157l-.052-.575v-1.604c-.017-.28.035-.558.07-.82z" fill="#c2bfbf"/></svg>           
-             </div>
-             <a target="_blank" href="https://dragonfist630.github.io/t1/src/templates/index.html"><button>Explore</button></a>
-           </div>
+          <div data-project-container class="w_history_wrap">
+            <template data-project-card>
+              <div class="thbs">
+                <div class="title-wrap">
+                  <h4 data-project-title class="title"></h4>
+                  <p data-project-duration style="font-style: italic"></p>
+                </div>
+                <p data-project-desc></p>
+                <div class="logo-btn-wrap">
+                  <div data-logo-wrap class="logo-wrap"></div>
+                  <a data-explore-link target="_blank"><button>Explore</button></a>
+                </div>
+              </div>
+            </template>
           </div>
-          <div class="thbs">
-            <div class="title-wrap">
-              <h4 class="title">Website for Gym</h4>
-              <p> <i>From June 19 - July 19 </i></p>
-            </div>
-            <p>Built a front end for gym with few animation. 
-            </p> 
-            <div class="logo-btn-wrap">
-              <div class="logo-wrap">
-               <svg fill="none" height="32" width="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 141.53199999999998"><path d="M10.383 126.894L0 0l124 .255-10.979 126.639-50.553 14.638z" fill="#e34f26"/><path d="M62.468 129.277V12.085l51.064.17-9.106 104.851z" fill="#ef652a"/><path d="M99.49 41.362l1.446-15.49H22.383l4.34 47.49h54.213L78.81 93.617l-17.362 4.68-17.617-5.106-.936-12.085H27.319l2.128 24.681 32 8.936 32.255-8.936 4.34-48.17H41.107L39.49 41.362z" fill="#fff"/></svg>
-               <svg fill="none" height="32" width="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 141.53"><path d="M10.383 126.892L0 0l124 .255-10.979 126.637-50.553 14.638z" fill="#1b73ba"/><path d="M62.468 129.275V12.085l51.064.17-9.106 104.85z" fill="#1c88c7"/><path d="M100.851 27.064H22.298l2.128 15.318h37.276l-36.68 15.745 2.127 14.808h54.043l-1.958 20.68-18.298 3.575-16.595-4.255-1.277-11.745H27.83l2.042 24.426 32.681 9.106 31.32-9.957 4-47.745H64.765l36.085-14.978z" fill="#fff"/></svg>
-             </div>
-             <a target="_blank" href="#"><button>Explore</button></a>
-           </div>
-          </div>
-          <div class="thbs">
-            <div class="title-wrap">
-              <h4 class="title">Credit Risk Model</h4>
-              <p> <i>From MAR 19 - APR 19 </i></p>
-            </div>
-            <p>Developed a Simple Machine Learning model to predict which borrower might default using  Python Library called Sklearn.   
-            </p> 
-            <div class="logo-btn-wrap">
-              <div class="logo-wrap">
-                <svg width="32" height="32" viewBox="0 0 256 255" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet"><defs><linearGradient x1="12.959%" y1="12.039%" x2="79.639%" y2="78.201%" id="a"><stop stop-color="#387EB8" offset="0%"/><stop stop-color="#366994" offset="100%"/></linearGradient><linearGradient x1="19.128%" y1="20.579%" x2="90.742%" y2="88.429%" id="b"><stop stop-color="#FFE052" offset="0%"/><stop stop-color="#FFC331" offset="100%"/></linearGradient></defs><path d="M126.916.072c-64.832 0-60.784 28.115-60.784 28.115l.072 29.128h61.868v8.745H41.631S.145 61.355.145 126.77c0 65.417 36.21 63.097 36.21 63.097h21.61v-30.356s-1.165-36.21 35.632-36.21h61.362s34.475.557 34.475-33.319V33.97S194.67.072 126.916.072zM92.802 19.66a11.12 11.12 0 0 1 11.13 11.13 11.12 11.12 0 0 1-11.13 11.13 11.12 11.12 0 0 1-11.13-11.13 11.12 11.12 0 0 1 11.13-11.13z" fill="url(#a)"/><path d="M128.757 254.126c64.832 0 60.784-28.115 60.784-28.115l-.072-29.127H127.6v-8.745h86.441s41.486 4.705 41.486-60.712c0-65.416-36.21-63.096-36.21-63.096h-21.61v30.355s1.165 36.21-35.632 36.21h-61.362s-34.475-.557-34.475 33.32v56.013s-5.235 33.897 62.518 33.897zm34.114-19.586a11.12 11.12 0 0 1-11.13-11.13 11.12 11.12 0 0 1 11.13-11.131 11.12 11.12 0 0 1 11.13 11.13 11.12 11.12 0 0 1-11.13 11.13z" fill="url(#b)"/></svg>
-             </div>
-             <a target="_blank" href="#"><button>Explore</button></a>
-           </div>
-          </div>
-        </div>
         </div>
         <div class="footer container-fluid">
-         <a target="_blank" href="mailto:gadharinayan@gmail.com"><p>Email: gadharinayan@gmail.com</p></a>
+          <a target="_blank" href="mailto:gadharinayan@gmail.com"><p>Email: gadharinayan@gmail.com</p></a>
         </div>
       </section>
     </main>
-  <script>
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "54vw";
-    }    
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0vw";
-    }
-  </script>
+    <script src="./main.js"></script>
   </body>
 </html>

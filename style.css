@@ -340,6 +340,7 @@ a {
   margin-top: 4.5rem;
   display: flex;
   flex-direction: column;
+  overflow:visible;
 }
 .middle-inner-top {
   background-image: linear-gradient(rgb(41, 42, 51, 0.7), rgb(29, 29, 39, 0.7)), url("img/bg.jpg");
@@ -350,6 +351,7 @@ a {
   height: 95%;
   display: flex;
   flex-direction: row;
+  overflow:visible;
 }
 .inner-top-left {
   width: 60%;
@@ -371,6 +373,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: visible;
 }
 iframe{
   width: 100%;
