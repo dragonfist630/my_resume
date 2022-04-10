@@ -102,9 +102,16 @@ const project = document.querySelector("[data-project-card]");
 
 const arr_project = [
   {
+    p_title: "Social Voting application.(Ballot)",
+    duration: "From MAR 22",
+    img: ["react","materialUi","nodejs","mongodb"],
+    descr: "Developed a simple web application where each user can share there  opinion by voiting on different queries.(Admin credintials: Email:nayangadhari@gmail.com, Password: Password@123 )",
+    link: "https://ballotfe.herokuapp.com/",
+  },
+  {
     p_title: "Train Tiket Booking website",
     duration: "From Dec 21 - Dec 21",
-    img: ["html", "css", "nodejs"],
+    img: ["html", "css", "nodejs","mongodb"],
     descr: "Created fullstack website for booking train ticket using express framework and mongose library.",
     link: "https://dragonfist630.github.io/t1/src/templates/index.html",
   },
@@ -113,13 +120,6 @@ const arr_project = [
     duration: "From June 19 - July 19",
     img: ["html", "css"],
     descr: "Built a front end for gym with few animation.",
-    link: "#",
-  },
-  {
-    p_title: "Credit Risk Model",
-    duration: "From MAR 19 - APR 19",
-    img: ["python"],
-    descr: "Developed a Simple Machine Learning model to predict which borrower might default using  Python Library called Sklearn.",
     link: "#",
   },
 ];
