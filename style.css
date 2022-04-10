@@ -610,7 +610,7 @@ button {
   background-color: #ffc107;
 }
 .logo-wrap{
-/*   width: 30%; */
+  width: 34%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -621,6 +621,9 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.logo-btn-wrap>a{
+  align-self:center;
 }
  .footer{/* fotter of main*/
   width: 93%;
