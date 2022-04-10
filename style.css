@@ -610,7 +610,7 @@ button {
   background-color: #ffc107;
 }
 .logo-wrap{
-  width: 35%;
+/*   width: 30%; */
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
