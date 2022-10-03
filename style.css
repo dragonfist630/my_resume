@@ -482,7 +482,7 @@ iframe{
 }
 .workex::before {/* animation for those numbers   */
   animation: counter 1s linear alternate;
-  counter-reset: count 3;
+  counter-reset: count 1;
 }
 @keyframes counter {
   0% {

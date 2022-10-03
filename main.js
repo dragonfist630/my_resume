@@ -71,18 +71,29 @@ for (let i = 0; i < arr_inline_progressbar.length; i++) {
 //dynamically creating work ex card
 const Wex_continer = document.querySelector("[data-Wex-container]");
 const Wex = document.querySelector("[data-Wex-card]");
-
 var arr_Wex_card_data = [
   {
     title: "Associate Software Engineer",
-    c_name: "Since Sept 21, @TORRY HARRIS BUSINESS SOLUTION",
-    desc: "Building beginners level websites with the help of new technologies by attending training provided by the company.",
+    c_name: "From Jan 22 - Aug 22, @TORRY HARRIS BUSINESS SOLUTION",
+    desc: `Created User Interface of Software Management Portal for Schneider Electric in Figma, collaborated with Lead UI Designer.
+    Saved 2 hours of time by developing a Log management system in a Digital Marketing Automation application.Managed a process re-engineering Digital Market automation application to improve user interface and experience; restructured dependencies and cut down UI Libraries by 50%.
+    Implemented ReactJS, React bootstrap, Storybook, and Redux in H.com (A website inspired by Trivago, Booking.com, and MakeMyTrip).
+    Designed User Interface for Hotel booking website in Figma. 
+    `,
   },
   {
-    title: "Business Associate",
-    c_name: "From April 21 - Aug 21, @STELLAR ORGANISATION",
-    desc: "Stellar organization is a marketing & sales acceleration firm for charities like UNICEF, Save the Children, CRY, HelpAge. My Responsibility as Business Associate is to generate sales through Face to Face and Telemarketing for our Clients.",
+    title: "Associate Software Engineer trainee",
+    c_name: "From Sept 21 - Dec 21, @TORRY HARRIS BUSINESS SOLUTION",
+    desc: `Learned the designed system and created a User Interface using components in Figma for the Ballot web app saved design time by 50%.
+    Implement ReactJS, Restful API, and ExpressJS in a Full stack application called Ballot. A web app used in THBS for conducting surveys among employees, established communication flow among 10 departments and cut down paperwork by 75%.
+    Developed a Full Stack website for Train ticket reservation, using NodeJS, JavaScript, HTML5 and CSS3.
+    `,
   },
+  // {
+  //   title: "Business Associate",
+  //   c_name: "From April 21 - Aug 21, @STELLAR ORGANISATION",
+  //   desc: "Stellar organization is a marketing & sales acceleration firm for charities like UNICEF, Save the Children, CRY, HelpAge. My Responsibility as Business Associate is to generate sales through Face to Face and Telemarketing for our Clients.",
+  // },
 ];
 
 for (let i = 0; i < arr_Wex_card_data.length; i++) {
@@ -117,10 +128,10 @@ const arr_project = [
   },
   {
     p_title: "Fitness website",
-    duration: "From June 19 - July 19",
-    img: ["html", "css"],
-    descr: "Built a front end for gym with few animation.",
-    link: "#",
+    duration: "July 22",
+    img: ["figma"],
+    descr: "Built a UI/UX for H.com a Hotel managment website.",
+    link: "https://www.figma.com/file/unGhmlTdRriWjabTUmdh6A/Lodge-management?node-id=0%3A1",
   },
 ];
 
